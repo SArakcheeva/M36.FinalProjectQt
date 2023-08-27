@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/network">
+        <file>network.config</file>
+    </qresource>
+</RCC>
