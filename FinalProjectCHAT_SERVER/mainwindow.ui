@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>673</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ConsoleCHAT_SERVER</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>&lt; CONNECTION SETTINGS &gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>328</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="connectPushButton">
+        <property name="font">
+         <font>
+          <family>Ubuntu</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Ubuntu&quot;;
+color: rgb(4, 62, 30);
+background-color: rgb(143, 240, 164);</string>
+        </property>
+        <property name="text">
+         <string>CONNECT</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QSplitter" name="splitter_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <widget class="QLabel" name="port_label_4">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(119, 118, 123);</string>
+         </property>
+         <property name="text">
+          <string>PASSWORD</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="password_lineEdit">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSplitter" name="splitter_4">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <widget class="QLabel" name="port_label_3">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(119, 118, 123);</string>
+         </property>
+         <property name="text">
+          <string>USER</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="user_lineEdit">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSplitter" name="splitter_6">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <widget class="QLabel" name="port_label">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(119, 118, 123);</string>
+         </property>
+         <property name="text">
+          <string>PORT</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="port_lineEdit">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSplitter" name="splitter_5">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <widget class="QLabel" name="port_label_2">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(119, 118, 123);</string>
+         </property>
+         <property name="text">
+          <string>HOST</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="host_lineEdit">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSplitter" name="splitter">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <widget class="QLabel" name="port_label_5">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(119, 118, 123);</string>
+         </property>
+         <property name="text">
+          <string>NAME DB</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="name_lineEdit">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="connectionBrowser">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter_11">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QSplitter" name="splitter_10">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QSplitter" name="splitter_8">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <widget class="QLabel" name="labelMessages_2">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(4, 62, 30);</string>
+         </property>
+         <property name="text">
+          <string>&lt; ACTIV USERS &gt;</string>
+         </property>
+        </widget>
+        <widget class="QTableWidget" name="userTableWidget">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(4, 62, 30);</string>
+         </property>
+         <property name="columnCount">
+          <number>3</number>
+         </property>
+         <column>
+          <property name="text">
+           <string>Nickname</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Login</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Password</string>
+          </property>
+         </column>
+        </widget>
+       </widget>
+       <widget class="QSplitter" name="splitter_9">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <widget class="QLabel" name="labelMessages_3">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(98, 3, 3);</string>
+         </property>
+         <property name="text">
+          <string>&lt; REMOVE USERS &gt;</string>
+         </property>
+        </widget>
+        <widget class="QTableWidget" name="removeUsersTableWidget">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(98, 3, 3);</string>
+         </property>
+         <property name="columnCount">
+          <number>3</number>
+         </property>
+         <column>
+          <property name="text">
+           <string>Nickname</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Login</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Password</string>
+          </property>
+         </column>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(165, 29, 45);</string>
+       </property>
+       <property name="text">
+        <string>For delete an account double mouse click on the selected user</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter_3">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QLabel" name="label_3">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(3, 23, 77);</string>
+       </property>
+       <property name="text">
+        <string>&lt; MESSAGES &gt;</string>
+       </property>
+      </widget>
+      <widget class="QTextBrowser" name="chatBrowser">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(3, 23, 77);</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
